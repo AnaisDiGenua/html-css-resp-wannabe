@@ -56,8 +56,26 @@ h1 {
 
 
 
+/* tablet  view */
+@media screen and (min-width: 768px) {
+  .row {
+    max-width: 450px;
+  }
+  /* BLOCCO STEPS */
+  #steps .row>.left,
+  #steps .row>.central {
+    float: left;
+    width: 50%;
+  }
+  #steps .row>.right {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
 /* desktop view */
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 1200px) {
   /* COMMONS */
   .row {
     max-width: 992px;
@@ -70,7 +88,7 @@ h1 {
     background-color: #f9f9f9;
   }
   img {
-    height: 250px;
+    height: 200px;
   }
   h1 {
     padding: 0;
@@ -102,4 +120,5 @@ h1 {
     margin-top: 80px;
   }
 }
+
 
